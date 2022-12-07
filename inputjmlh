@@ -1,0 +1,5 @@
+dialog --title "masukan jumlah pesanan"  --inputbox "jumlah" 8 60 2>/tmp/input.$$
+
+sel=$?
+jmlh=`cat /tmp/input.$$`
+rm -f /tmp/input.$$

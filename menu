@@ -1,0 +1,18 @@
+dialog --backtitle "Program UAS Meisya" --title "PILIH MENU PECEL" --menu "Gunakan panah [UP] [DOWN], [ENTER] untuk memilih" 15 60 6 Pecel_ayam "Pecel ayam" Pecel_lele "Pecel lele" Bebek_goreng "Bebek goreng" 2>/tmp/menuitem.$$
+menuitem=`cat /tmp/menuitem.$$`
+opt=$?
+case $menuitem in
+	Pecel_ayam)
+	. inputjmlh
+	. jumlah
+;;
+	Pecel_lele)
+	. inputjmlh
+	. jumlah1
+;;
+        Bebek_goreng)
+        . inputjmlh
+        . jumlah2
+;;
+
+esac

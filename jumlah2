@@ -1,0 +1,2 @@
+dialog --title "Pecel Meisya" --backtitle "Program UAS Meisya" --msgbox " Jenis Makanan   = $menuitem\n Jumlah Pesanan  = $jmlh\n Harga perporsi  = 13000\n Total $jmlh * 13000 = `expr $jmlh \* 13000`" 9 50 ;
+rm -f /tmp/input.$$
